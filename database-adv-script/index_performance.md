@@ -1,3 +1,18 @@
+
+> ✅ Make sure the file shows *actual* use of EXPLAIN, not just says "we used EXPLAIN".
+
+---
+
+## ✅ What To Do Now
+
+1. **Create** `database_index.sql` with valid `CREATE INDEX` commands.
+2. **Update** `index_performance.md` to include `EXPLAIN` SQL and comments about performance improvement.
+3. **Stage, commit, and push** both files to GitHub.
+
+```bash
+git add database_index.sql index_performance.md
+git commit -m "Add index creation and performance explanation"
+git push
 -- Create indexes on commonly used columns to improve performance
 
 -- Index on user_id column in bookings table (frequently used in WHERE and JOIN)
