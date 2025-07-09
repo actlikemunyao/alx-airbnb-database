@@ -34,4 +34,9 @@ To improve query performance by creating indexes on high-usage columns in the `u
 ### Query Tested (Before Indexing)
 ```sql
 SELECT * FROM bookings WHERE user_id = 10;
-SELECT * FROM bookings WHERE user_id = 10;
+SELECT * FROM bookings WHERE user_id = 10;## Performance Comparison Using EXPLAIN
+
+### Before Index:
+```sql
+EXPLAIN SELECT * FROM bookings WHERE user_id = 5;
+
